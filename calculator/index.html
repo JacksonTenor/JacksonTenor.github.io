@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="calculator">
+  <div style="height:1px; margin:-3px;"> </div>
+  <div style='text-align: right;' class="display">
+    <h1 class="margin:5px;"id="display"> 0</h1>
+  </div>
+  <div class="numpad">
+    <div class="clearButtons">
+      <button onClick="clearAll()"> AC </button>
+      <button onClick="clearExp()"> CE </button>
+    </div>
+    <button onClick="number(7)"> 7 </button>
+    <button onClick="number(8)"> 8 </button>
+    <button onClick="number(9)"> 9 </button>
+    <button onClick="number(4)"> 4 </button>
+    <button onClick="number(5)"> 5 </button>
+    <button onClick="number(6)"> 6 </button>
+    <button onClick="number(1)"> 1 </button>
+    <button onClick="number(2)"> 2 </button>
+    <button onClick="number(3)"> 3 </button>
+
+
+
+
+    <button onClick="number(0)"> 0 </button>
+    <button onClick="decimal()"> .</button>
+    <button onClick="sum()"> = </button>
+  </div>
+  <div class='operators'>
+    <button onClick="operator('a')"> + </button>
+    <button onClick="operator('s')"> - </button>
+    <button onClick="operator('m')"> * </button>
+    <button onClick="operator('d')"> / </button>
+  </div>
+
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
